@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Padaria Pão Dourado — pães artesanais fresquinhos, bolos, doces e café da manhã. Padaria de bairro tradicional desde 1985.">
+  <title>Padaria Pão Dourado — Pães artesanais fresquinhos todos os dias</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon placeholder (emoji). Trocar pelo favicon real do cliente: <link rel="icon" href="favicon.ico"> -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🥖</text></svg>">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Faixa de demonstração Weblar -->
+  <style>
+    .weblar-faixa {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 2000;
+      background: rgba(20, 22, 30, 0.92);
+      color: #FFFFFF;
+      font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+      font-size: 0.78rem;
+      text-align: center;
+      padding: 7px 14px;
+      line-height: 1.3;
+      backdrop-filter: blur(4px);
+    }
+    .weblar-faixa a {
+      color: #C7CBFF;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .weblar-faixa a:hover { text-decoration: underline; }
+    body { padding-top: 34px; }
+    #topo { top: 34px; }
+  </style>
+</head>
+<body>
+
+  <div class="weblar-faixa">
+    🔎 Site de demonstração — criado pela Weblar | <a href="https://weblar.app.br" target="_blank" rel="noopener">weblar.app.br</a>
+  </div>
+
+  <header id="topo">
+    <!-- Cabeçalho: logo do negócio + menu de navegação -->
+    <div class="container topo-conteudo">
+      <a href="#topo" class="logo">Padaria Pão Dourado</a>
+      <nav class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio">
+    <!-- Seção inicial (hero): título de impacto, subtítulo e botão de ação -->
+    <div class="container inicio-conteudo">
+      <div class="inicio-texto">
+        <h1>Padaria Pão Dourado</h1>
+        <p class="slogan">Pães fresquinhos todos os dias desde 1985</p>
+        <p class="apoio">Pães artesanais saídos do forno, bolos e doces feitos com receitas de família e o atendimento caloroso de quem é do bairro. Venha sentir o cheirinho de pão quentinho.</p>
+        <div class="inicio-botoes">
+          <a href="#contato" class="btn-principal">Fale conosco</a>
+          <a href="#servicos" class="btn-secundario">Nossos serviços</a>
+        </div>
+      </div>
+      <div class="inicio-imagem">
+        <!-- Espaço reservado para imagem/foto do negócio (desktop) -->
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <!-- Sobre o negócio: história, diferenciais, equipe -->
+    <div class="container sobre-conteudo">
+      <div class="sobre-imagem">
+        <!-- trocar por foto real do negócio -->
+        Nossa Padaria
+      </div>
+      <div class="sobre-texto">
+        <h2>Sobre nós</h2>
+        <p>A Padaria Pão Dourado abriu suas portas em 1985 e desde então é ponto de encontro do bairro. Começamos pequenininhos, com um forno a lenha e a receita de pão da vovó, e crescemos junto com a vizinhança que nos acompanha a cada manhã.</p>
+        <p>Aqui tudo é feito com calma e carinho: massas que descansam no tempo certo, fornadas que saem quentinhas ao longo do dia e o mesmo sabor caseiro de sempre. Mais do que vender pão, gostamos de receber bem cada cliente como parte da família.</p>
+        <ul class="sobre-diferenciais">
+          <li>Fornada fresca a cada 2 horas</li>
+          <li>Receitas artesanais de família</li>
+          <li>Atendimento caloroso de bairro</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <!-- Serviços/produtos oferecidos pelo negócio -->
+    <div class="container">
+      <h2 class="servicos-titulo">Nossos serviços</h2>
+      <p class="servicos-subtitulo">Do pão de cada dia aos doces especiais, tudo feito na hora para você.</p>
+      <div class="servicos-grade">
+        <article class="card-servico">
+          <div class="card-icone">🥖</div>
+          <h3>Pães Artesanais</h3>
+          <p>Pão francês crocante, pães de fermentação natural e especiais saindo do forno ao longo de todo o dia.</p>
+        </article>
+        <article class="card-servico">
+          <div class="card-icone">🎂</div>
+          <h3>Bolos e Doces</h3>
+          <p>Bolos caseiros, tortas, sonhos e doces feitos com receitas de família para adoçar o seu dia.</p>
+        </article>
+        <article class="card-servico">
+          <div class="card-icone">☕</div>
+          <h3>Café da Manhã</h3>
+          <p>Café fresquinho, pão na chapa, sucos e salgados para começar a manhã do jeito certo.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <!-- Galeria de fotos do negócio, produtos ou trabalhos realizados -->
+    <div class="container">
+      <h2 class="galeria-titulo">Galeria</h2>
+      <p class="galeria-subtitulo">Um pouquinho do que sai fresquinho da nossa cozinha todos os dias.</p>
+      <!-- trocar por fotos reais -->
+      <div class="galeria-grade">
+        <div class="galeria-item galeria-item-1">Pães</div>
+        <div class="galeria-item galeria-item-2">Bolos</div>
+        <div class="galeria-item galeria-item-3">Croissants</div>
+        <div class="galeria-item galeria-item-4">Café</div>
+        <div class="galeria-item galeria-item-5">Salgados</div>
+        <div class="galeria-item galeria-item-6">Tortas</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <!-- Contato: endereço, telefone, WhatsApp, formulário, mapa -->
+    <div class="container">
+      <h2 class="contato-titulo">Entre em contato</h2>
+      <p class="contato-subtitulo">Venha tomar um café conosco ou faça sua encomenda pelo telefone.</p>
+      <div class="contato-conteudo">
+        <div class="contato-info">
+          <div class="contato-item">
+            <span class="contato-icone">📍</span>
+            <div>
+              <strong>Endereço</strong>
+              <p>Rua das Acácias, 245 — Vila Mariana, São Paulo — SP, 04015-060</p>
+            </div>
+          </div>
+          <div class="contato-item">
+            <span class="contato-icone">📞</span>
+            <div>
+              <strong>Telefone</strong>
+              <p><a href="tel:+551134567890">(11) 3456-7890</a></p>
+            </div>
+          </div>
+          <div class="contato-item">
+            <span class="contato-icone">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:contato@paodourado.com.br">contato@paodourado.com.br</a></p>
+            </div>
+          </div>
+          <div class="contato-item">
+            <span class="contato-icone">🕒</span>
+            <div>
+              <strong>Horário de funcionamento</strong>
+              <p>Seg a Sáb: 6h–20h | Dom: 6h–13h</p>
+            </div>
+          </div>
+        </div>
+        <div class="contato-mapa">
+          <!-- TROCAR pelo embed do Google Maps do endereço real do cliente: ir no Google Maps > Compartilhar > Incorporar mapa > copiar o iframe -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0!2d-46.6333!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjgiUyA0NsKwMzcnNTkuOSJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="rodape">
+    <!-- Rodapé: direitos autorais, redes sociais, links rápidos -->
+    <div class="container">
+      <div class="rodape-colunas">
+        <div class="rodape-coluna">
+          <span class="rodape-logo">Padaria Pão Dourado</span>
+          <p class="rodape-slogan">Pães fresquinhos todos os dias desde 1985</p>
+        </div>
+        <div class="rodape-coluna">
+          <h3>Navegação</h3>
+          <ul class="rodape-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="rodape-coluna">
+          <h3>Contato</h3>
+          <p>Rua das Acácias, 245 — Vila Mariana, São Paulo — SP</p>
+          <p>(11) 3456-7890</p>
+          <p>contato@paodourado.com.br</p>
+        </div>
+      </div>
+      <div class="rodape-base">
+        <p>© 2026 Padaria Pão Dourado. Todos os direitos reservados.</p>
+        <p class="rodape-credito">Site desenvolvido por Weblar</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

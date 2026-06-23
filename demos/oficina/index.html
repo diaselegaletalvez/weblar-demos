@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Auto Center Silva — oficina mecânica de confiança há mais de 20 anos. Mecânica geral, troca de óleo e pneus, elétrica automotiva e diagnóstico honesto.">
+  <title>Auto Center Silva — Oficina Mecânica de Confiança</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Favicon placeholder (emoji). Trocar pelo favicon real do cliente: <link rel="icon" href="favicon.ico"> -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔧</text></svg>">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Faixa de demonstração Weblar -->
+  <style>
+    .weblar-faixa {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 2000;
+      background: rgba(20, 22, 30, 0.92);
+      color: #FFFFFF;
+      font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+      font-size: 0.78rem;
+      text-align: center;
+      padding: 7px 14px;
+      line-height: 1.3;
+      backdrop-filter: blur(4px);
+    }
+    .weblar-faixa a {
+      color: #C7CBFF;
+      font-weight: 600;
+      text-decoration: none;
+    }
+    .weblar-faixa a:hover { text-decoration: underline; }
+    body { padding-top: 34px; }
+    #topo { top: 34px; }
+  </style>
+</head>
+<body>
+
+  <div class="weblar-faixa">
+    🔎 Site de demonstração — criado pela Weblar | <a href="https://weblar.app.br" target="_blank" rel="noopener">weblar.app.br</a>
+  </div>
+
+  <header id="topo">
+    <!-- Cabeçalho: logo do negócio + menu de navegação -->
+    <div class="container topo-conteudo">
+      <a href="#topo" class="logo">Auto Center Silva</a>
+      <nav class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="inicio">
+    <!-- Seção inicial (hero): título de impacto, subtítulo e botão de ação -->
+    <div class="container inicio-conteudo">
+      <div class="inicio-texto">
+        <h1>Auto Center Silva</h1>
+        <p class="slogan">Seu carro em boas mãos há mais de 20 anos</p>
+        <p class="apoio">Oficina de confiança com mecânicos experientes, diagnóstico honesto e atendimento rápido. Cuidamos do seu veículo com transparência do orçamento à entrega.</p>
+        <div class="inicio-botoes">
+          <a href="#contato" class="btn-principal">Fale conosco</a>
+          <a href="#servicos" class="btn-secundario">Nossos serviços</a>
+        </div>
+      </div>
+      <div class="inicio-imagem">
+        <!-- Espaço reservado para imagem/foto do negócio (desktop) -->
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre">
+    <!-- Sobre o negócio: história, diferenciais, equipe -->
+    <div class="container sobre-conteudo">
+      <div class="sobre-imagem">
+        <!-- trocar por foto real do negócio -->
+        Oficina
+      </div>
+      <div class="sobre-texto">
+        <h2>Sobre nós</h2>
+        <p>O Auto Center Silva nasceu há mais de 20 anos com um propósito simples: cuidar do carro de cada cliente como se fosse o nosso. Nesse tempo, nos tornamos uma referência de confiança na cidade, atendendo gerações de motoristas que voltam sempre por saber que aqui o serviço é bem feito.</p>
+        <p>Nossa equipe é formada por mecânicos experientes, apaixonados pelo que fazem e comprometidos com a honestidade no orçamento. Avaliamos cada veículo com atenção, explicamos o que realmente precisa ser feito e só executamos o serviço com a sua aprovação — sem surpresas na hora de pagar.</p>
+        <ul class="sobre-diferenciais">
+          <li>Mais de 20 anos de experiência</li>
+          <li>Orçamento honesto e transparente</li>
+          <li>Atendimento rápido e de confiança</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="servicos">
+    <!-- Serviços/produtos oferecidos pelo negócio -->
+    <div class="container">
+      <h2 class="servicos-titulo">Nossos serviços</h2>
+      <p class="servicos-subtitulo">Soluções completas para manter o seu veículo seguro, econômico e sempre pronto para rodar.</p>
+      <div class="servicos-grade">
+        <article class="card-servico">
+          <div class="card-icone">🔧</div>
+          <h3>Mecânica Geral</h3>
+          <p>Manutenção preventiva e corretiva de motor, freios, suspensão e câmbio, com diagnóstico preciso e peças de qualidade.</p>
+        </article>
+        <article class="card-servico">
+          <div class="card-icone">🛞</div>
+          <h3>Troca de Óleo e Pneus</h3>
+          <p>Troca de óleo, filtros, alinhamento, balanceamento e pneus novos para uma direção mais segura e econômica.</p>
+        </article>
+        <article class="card-servico">
+          <div class="card-icone">⚡</div>
+          <h3>Elétrica Automotiva</h3>
+          <p>Reparo de bateria, alternador, injeção eletrônica, faróis e todo o sistema elétrico do seu carro.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria">
+    <!-- Galeria de fotos do negócio, produtos ou trabalhos realizados -->
+    <div class="container">
+      <h2 class="galeria-titulo">Galeria</h2>
+      <p class="galeria-subtitulo">Veja um pouco da nossa estrutura, da nossa equipe e do nosso dia a dia.</p>
+      <!-- trocar por fotos reais -->
+      <div class="galeria-grade">
+        <div class="galeria-item galeria-item-1">Oficina</div>
+        <div class="galeria-item galeria-item-2">Equipe</div>
+        <div class="galeria-item galeria-item-3">Diagnóstico</div>
+        <div class="galeria-item galeria-item-4">Serviços</div>
+        <div class="galeria-item galeria-item-5">Ferramentas</div>
+        <div class="galeria-item galeria-item-6">Recepção</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <!-- Contato: endereço, telefone, WhatsApp, formulário, mapa -->
+    <div class="container">
+      <h2 class="contato-titulo">Entre em contato</h2>
+      <p class="contato-subtitulo">Venha nos visitar ou ligue para agendar o serviço do seu veículo.</p>
+      <div class="contato-conteudo">
+        <div class="contato-info">
+          <div class="contato-item">
+            <span class="contato-icone">📍</span>
+            <div>
+              <strong>Endereço</strong>
+              <p>Av. dos Mecânicos, 1500 — Vila Industrial, São Paulo — SP, 03320-000</p>
+            </div>
+          </div>
+          <div class="contato-item">
+            <span class="contato-icone">📞</span>
+            <div>
+              <strong>Telefone</strong>
+              <p><a href="tel:+551145678901">(11) 4567-8901</a></p>
+            </div>
+          </div>
+          <div class="contato-item">
+            <span class="contato-icone">✉️</span>
+            <div>
+              <strong>Email</strong>
+              <p><a href="mailto:contato@autocentersilva.com.br">contato@autocentersilva.com.br</a></p>
+            </div>
+          </div>
+          <div class="contato-item">
+            <span class="contato-icone">🕒</span>
+            <div>
+              <strong>Horário de funcionamento</strong>
+              <p>Seg a Sex: 8h–18h | Sáb: 8h–12h</p>
+            </div>
+          </div>
+        </div>
+        <div class="contato-mapa">
+          <!-- TROCAR pelo embed do Google Maps do endereço real do cliente: ir no Google Maps > Compartilhar > Incorporar mapa > copiar o iframe -->
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.0!2d-46.6333!3d-23.5505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjPCsDMzJzAxLjgiUyA0NsKwMzcnNTkuOSJX!5e0!3m2!1spt-BR!2sbr!4v1700000000000"
+            width="100%"
+            height="350"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="rodape">
+    <!-- Rodapé: direitos autorais, redes sociais, links rápidos -->
+    <div class="container">
+      <div class="rodape-colunas">
+        <div class="rodape-coluna">
+          <span class="rodape-logo">Auto Center Silva</span>
+          <p class="rodape-slogan">Seu carro em boas mãos há mais de 20 anos</p>
+        </div>
+        <div class="rodape-coluna">
+          <h3>Navegação</h3>
+          <ul class="rodape-links">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#galeria">Galeria</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </div>
+        <div class="rodape-coluna">
+          <h3>Contato</h3>
+          <p>Av. dos Mecânicos, 1500 — Vila Industrial, São Paulo — SP</p>
+          <p>(11) 4567-8901</p>
+          <p>contato@autocentersilva.com.br</p>
+        </div>
+      </div>
+      <div class="rodape-base">
+        <p>© 2026 Auto Center Silva. Todos os direitos reservados.</p>
+        <p class="rodape-credito">Site desenvolvido por Weblar</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
