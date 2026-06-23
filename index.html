@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Demonstrações Weblar — exemplos de sites criados pela Weblar para diferentes tipos de negócio.">
+  <title>Demonstrações Weblar</title>
+
+  <!-- Google Fonts: Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🟣</text></svg>">
+
+  <style>
+    :root {
+      --roxo: #6366F1;
+      --roxo-escuro: #4F46E5;
+      --texto: #1F2433;
+      --texto-suave: #6B7280;
+      --fundo: #F6F7FB;
+      --card: #FFFFFF;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    body {
+      font-family: 'Poppins', system-ui, -apple-system, sans-serif;
+      background: var(--fundo);
+      color: var(--texto);
+      line-height: 1.6;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 48px 20px;
+    }
+
+    .wrap {
+      width: 100%;
+      max-width: 720px;
+      margin: auto 0;
+      text-align: center;
+    }
+
+    .marca {
+      display: inline-block;
+      font-weight: 700;
+      font-size: 0.85rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--roxo);
+      background: rgba(99, 102, 241, 0.1);
+      padding: 6px 16px;
+      border-radius: 999px;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: clamp(1.9rem, 5vw, 2.6rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+
+    .subtitulo {
+      color: var(--texto-suave);
+      font-size: 1.05rem;
+      max-width: 460px;
+      margin: 0 auto 40px;
+    }
+
+    .cards {
+      display: grid;
+      gap: 16px;
+      text-align: left;
+    }
+
+    .card {
+      display: flex;
+      align-items: center;
+      gap: 18px;
+      background: var(--card);
+      border: 1px solid #ECECF3;
+      border-radius: 16px;
+      padding: 22px 24px;
+      text-decoration: none;
+      color: inherit;
+      box-shadow: 0 1px 2px rgba(16, 24, 40, 0.04);
+      transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
+    }
+
+    .card:hover,
+    .card:focus-visible {
+      transform: translateY(-3px);
+      border-color: var(--roxo);
+      box-shadow: 0 12px 28px rgba(99, 102, 241, 0.18);
+      outline: none;
+    }
+
+    .card-emoji {
+      flex-shrink: 0;
+      width: 52px;
+      height: 52px;
+      display: grid;
+      place-items: center;
+      font-size: 1.6rem;
+      background: rgba(99, 102, 241, 0.1);
+      border-radius: 12px;
+    }
+
+    .card-texto { flex: 1; min-width: 0; }
+
+    .card-nome {
+      font-weight: 600;
+      font-size: 1.1rem;
+      margin-bottom: 2px;
+    }
+
+    .card-desc {
+      color: var(--texto-suave);
+      font-size: 0.92rem;
+    }
+
+    .card-seta {
+      flex-shrink: 0;
+      color: var(--roxo);
+      font-size: 1.3rem;
+      transition: transform 0.18s ease;
+    }
+
+    .card:hover .card-seta,
+    .card:focus-visible .card-seta { transform: translateX(4px); }
+
+    footer {
+      margin-top: 48px;
+      font-size: 0.85rem;
+      color: var(--texto-suave);
+    }
+
+    footer a {
+      color: var(--roxo);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 480px) {
+      body { padding: 32px 16px; }
+      .card { padding: 18px 18px; gap: 14px; }
+      .card-emoji { width: 46px; height: 46px; font-size: 1.4rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <main class="wrap">
+    <span class="marca">Weblar</span>
+    <h1>Demonstrações Weblar</h1>
+    <p class="subtitulo">Exemplos de sites criados pela Weblar. Clique para explorar.</p>
+
+    <div class="cards">
+      <a class="card" href="padaria/">
+        <span class="card-emoji">🥖</span>
+        <span class="card-texto">
+          <span class="card-nome">Padaria Pão Dourado</span>
+          <span class="card-desc">Padaria de bairro com pães artesanais, bolos e café da manhã.</span>
+        </span>
+        <span class="card-seta" aria-hidden="true">→</span>
+      </a>
+
+      <a class="card" href="dentista/">
+        <span class="card-emoji">🦷</span>
+        <span class="card-texto">
+          <span class="card-nome">Clínica Sorriso Perfeito</span>
+          <span class="card-desc">Odontologia humanizada com clínica geral, clareamento e ortodontia.</span>
+        </span>
+        <span class="card-seta" aria-hidden="true">→</span>
+      </a>
+
+      <a class="card" href="oficina/">
+        <span class="card-emoji">🔧</span>
+        <span class="card-texto">
+          <span class="card-nome">Auto Center Silva</span>
+          <span class="card-desc">Oficina mecânica de confiança: mecânica geral, óleo, pneus e elétrica.</span>
+        </span>
+        <span class="card-seta" aria-hidden="true">→</span>
+      </a>
+    </div>
+  </main>
+
+  <footer>
+    Weblar — <a href="https://weblar.app.br" target="_blank" rel="noopener">weblar.app.br</a>
+  </footer>
+
+</body>
+</html>
